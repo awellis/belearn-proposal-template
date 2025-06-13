@@ -1,6 +1,6 @@
 # BeLEARN Proposal Template
 
-This template provides a structured format for BeLEARN funding applications based on the ILLUMINATE proposal format.
+This template provides a structured format for BeLEARN funding applications.
 
 ## Quick Start
 
@@ -34,25 +34,30 @@ This will generate `main.pdf`.
 Replace all content marked with `[BRACKETS]`:
 
 ### Project Information
+
 - `[PROPOSAL TITLE]` - Your proposal title
 - `[PROJECT NAME]` - Short project name
 - `[Brief project description]` - 2-3 sentence summary
 
 ### Team Information
+
 - `[LEADER NAME]`, `[POSITION]`, `[INSTITUTION]`, `[DAYS]` - Project leader details
 - `[COLLABORATOR NAME]` - Collaborator information
 
 ### Dates and Timeline
+
 - `[START DATE]`, `[END DATE]` - Project duration
 - `[YEAR X THEME]` - Yearly themes
 - `[MILESTONE X]`, `[DELIVERABLE X]`, `[MONTH]` - Timeline details
 
 ### Budget Information
+
 - `[INSTITUTION X]`, `[AMOUNT]`, `[TOTAL]` - Cost breakdowns
 - `[PERCENTAGE]` - Employment percentages
 - `[DESCRIPTION]` - Budget item descriptions
 
 ### Content Sections
+
 - Research questions, methodology, objectives - Replace with your content
 - Abstract, introduction, added value - Write your specific content
 
@@ -71,6 +76,7 @@ Use the provided checkbox functions for required selections:
 ## Custom Styling
 
 The template includes:
+
 - `#styled-table()` for formatted tables
 - `#checkbox-table()` for checkbox selection tables
 - Custom Typst formatting functions
