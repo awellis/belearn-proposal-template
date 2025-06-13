@@ -25,3 +25,5 @@
 
 # MacOS
 .DS_Store
+
+/.quarto/
