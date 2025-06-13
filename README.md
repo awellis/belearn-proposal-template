@@ -81,7 +81,3 @@ The template includes:
 3. **Validate dates** - Ensure timeline is realistic and consistent
 4. **Budget accuracy** - Double-check all financial calculations
 5. **Reference formatting** - Follow BibTeX format in bibliography.bib
-
-## Original Template Source
-
-This template is based on the ILLUMINATE proposal for BeLEARN Barcamp 2025, adapted for general use.
