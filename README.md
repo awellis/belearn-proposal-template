@@ -13,6 +13,7 @@ This template provides a structured format for BeLEARN funding applications base
 ## Files Included
 
 - `main.qmd` - Main proposal document with placeholder content
+- `main.typ` - Generated Typst document (auto-created from main.qmd during rendering)
 - `template.typ` - Typst template for formatting (custom functions for tables, checkboxes)
 - `bibliography.bib` - Template bibliography file
 - `_quarto.yml` - Quarto configuration
