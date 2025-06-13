@@ -1,0 +1,329 @@
+---
+title: "[PROPOSAL TITLE]"
+format: 
+  typst:
+    toc: false
+    keep-typ: true
+bibliography: bibliography.bib
+bibliographystyle: apa
+---
+
+```{=typst}
+// Import template with helper functions
+#import "template.typ": *
+
+// Add logo to top right corner
+#place(
+  top + right,
+  dx: 0pt,
+  dy: -50pt,
+  image("assets/logo.png", width: 100pt)
+)
+```
+
+## General Information
+
+### [PROJECT NAME]
+
+[Brief project description - 2-3 sentences summarizing the project's main goal and approach]
+
+### Thematic Areas of the Project (Multiple options can be selected)
+
+```{=typst}
+#checkbox-table(
+  columns: (auto, auto, auto),
+  align: (left, left, left),
+  inset: 10pt,
+  
+  [#checkbox() Digital Skills],
+  [#checkbox() Digital Tools],
+  [#checkbox() Data Science in Education],
+  
+  [#checkbox() Digital Ethics],
+  [#checkbox(checked: true) Artificial Intelligence],
+  [],
+)
+```
+
+### Participating Founding Universities
+
+```{=typst}
+#checkbox-table(
+  columns: (auto, auto, auto, auto, auto),
+  align: center,
+  
+  [#checkbox(checked: true) BFH],
+  [#checkbox() EHB],
+  [#checkbox() EPFL],
+  [#checkbox() PHBern],
+  [#checkbox() Uni Bern],
+)
+```
+
+## Project Team
+
+### Project Leader(s)
+
+```{=typst}
+#styled-table(
+  columns: (3.5cm, 3cm, 3cm, 4cm),
+  fill: (_, y) => if y == 0 { rgb("#f2f2f2") } else { none },
+  
+  [*First and Last Name*], [*Position*], [*Institution*], [*Ø presence in the hub per week*],
+  
+  [[LEADER NAME]], [[POSITION]], [[INSTITUTION]], [[DAYS] days],
+  [[LEADER NAME 2]], [[POSITION]], [[INSTITUTION]], [[DAYS] days],
+)
+```
+
+### Project Collaborators / Further Persons Involved in the Project
+
+```{=typst}
+#styled-table(
+  columns: (3.5cm, 3cm, 3cm, 4cm),
+  fill: (_, y) => if y == 0 { rgb("#f2f2f2") } else { none },
+  
+  [*First and Last Name*], [*Position*], [*Institution*], [*Ø presence in the hub per week*],
+  [[COLLABORATOR NAME]], [[POSITION]], [[INSTITUTION]], [[DAYS] day],
+)
+```
+
+### Duration
+
+```{=typst}
+#styled-table(
+  columns: (4cm, auto),
+  [*Project Start:*], [[START DATE]],
+  [*Project End:*], [[END DATE]],
+)
+```
+
+## Outline of the research project
+
+### Abstract
+
+[Write a comprehensive abstract (250-300 words) that covers:
+- The problem your project addresses
+- Your approach/methodology
+- Expected outcomes and impact
+- Relevance to BeLEARN's mission]
+
+### Introduction
+
+[Provide background context explaining:
+- Current state of the field
+- Identified gaps or challenges
+- Why this project is needed now
+- How it connects to broader educational technology trends]
+
+### Objectives
+
+[List the main objectives of your project:
+- Primary objective (1 sentence)
+- Secondary objectives (bullet points)
+- Specific deliverables expected]
+
+### Research Questions / Research Issue
+
+#### Core Research Questions
+
+**RQ1: [MAIN RESEARCH QUESTION]:** [Detailed description of your primary research question]
+
+**RQ2: [SECONDARY RESEARCH QUESTION]:** [Detailed description of your secondary research question]
+
+**RQ3: [ADDITIONAL RESEARCH QUESTION]:** [If applicable, add more research questions]
+
+*Note: [Indicate which research questions are primary focus for the project duration]*
+
+### Method / Approach
+
+[Describe your methodology in detail:
+- Technical approach
+- Research methods
+- Data collection strategies
+- Analysis techniques
+- Validation methods]
+
+### Added Value of the Project
+
+[Explain the value proposition:
+- Scientific contribution
+- Practical benefits
+- Innovation aspects
+- Alignment with BeLEARN priorities]
+
+### Translation into Educational Practice
+
+[Describe how your project will be implemented:
+- Pilot implementation plans
+- Target audience (students, educators, institutions)
+- Integration with existing systems
+- Feedback mechanisms
+- Scaling considerations]
+
+### Timeline and Deliverables per Milestone
+
+```{=typst}
+#styled-table(
+  columns: (7cm, 4cm, 2cm),
+  fill: (_, y) => if y == 1 or y == 4 or y == 7 { rgb("#f2f2f2") } else { none },
+  align: (left, left, center),
+  
+  [*Milestone*], [*Deliverable*], [*Month*],
+  
+  // Year 1 header
+  [*Year 1: [YEAR 1 THEME]*], [], [],
+  
+  [[MILESTONE 1]], [[DELIVERABLE 1]], [[MONTH]],
+  [[MILESTONE 2]], [[DELIVERABLE 2]], [[MONTH]],
+  
+  // Year 2 header (if applicable)
+  [*Year 2: [YEAR 2 THEME]*], [], [],
+  
+  [[MILESTONE 3]], [[DELIVERABLE 3]], [[MONTH]],
+  [[MILESTONE 4]], [[DELIVERABLE 4]], [[MONTH]],
+  
+  // Year 3 header (if applicable)
+  [*Year 3: [YEAR 3 THEME]*], [], [],
+  
+  [[MILESTONE 5]], [[DELIVERABLE 5]], [[MONTH]],
+  [[MILESTONE 6]], [[DELIVERABLE 6]], [[MONTH]],
+)
+```
+
+### Thesis
+
+```{=typst}
+#styled-table(
+  columns: (auto, 10cm),
+  fill: (_, y) => if y == 0 { rgb("#f2f2f2") } else { none },
+  align: (center, left),
+  
+  [*Type*], [*Description*],
+  
+  [*Research Article*], [*Subject area:* [SUBJECT AREA]#linebreak()
+  *Potential topics:* [LIST POTENTIAL RESEARCH ARTICLE TOPICS]],
+  
+  [*Master's Thesis*], [*Subject area:* [SUBJECT AREA]#linebreak()
+  *Potential topics:* [LIST POTENTIAL THESIS TOPICS]],
+)
+```
+
+## Requested Funding
+
+*For multi-year projects, funding is guaranteed for the first year only. Funding for subsequent years depends on the achievement of annual milestones.*
+
+### List of Costs
+
+```{=typst}
+#styled-table(
+  columns: (3cm, 2.5cm, 2.5cm, 2.5cm, 2.5cm),
+  fill: (_, y) => if y == 0 { rgb("#f2f2f2") } else { none },
+  align: (left, right, right, right, right),
+  
+  [*Founding University*], [*Year 1 (CHF)*], [*Year 2 (CHF)*], [*Year 3 (CHF)*], [*Total (CHF)*],
+  [[INSTITUTION 1]], [[AMOUNT]], [[AMOUNT]], [[AMOUNT]], [[TOTAL]],
+  [[INSTITUTION 2]], [[AMOUNT]], [[AMOUNT]], [[AMOUNT]], [[TOTAL]],
+)
+```
+
+### Staff Costs
+
+```{=typst}
+#styled-table(
+  columns: (5cm, 4cm, 3cm),
+  fill: (_, y) => if y == 0 { rgb("#f2f2f2") } else { none },
+  align: (left, center, right),
+  
+  [*Name and institution:*], [*Employment rate (%) funded by BeLEARN*], [*Costs in CHF*],
+  [[NAME] ([INSTITUTION])#linebreak()#text(size: 0.9em)[(payed by [INSTITUTION])]], [[PERCENTAGE]%], [[AMOUNT]],
+  [[NAME] ([INSTITUTION])], [[PERCENTAGE]%], [[AMOUNT]],
+)
+```
+
+### Acquisitions (e.g., Laptop, VR Headsets, Licenses, etc.)
+
+```{=typst}
+#styled-table(
+  columns: (9cm, 3cm),
+  fill: (_, y) => if y == 0 { rgb("#f2f2f2") } else { none },
+  align: (left, right),
+  
+  [*Description (mentioning institution)*], [*Costs in CHF*],
+  [[DESCRIPTION] ([INSTITUTION])], [[AMOUNT]],
+  [[DESCRIPTION] ([INSTITUTION])], [[AMOUNT]],
+)
+```
+
+### Consumables and Expenses
+
+```{=typst}
+#styled-table(
+  columns: (9cm, 3cm),
+  fill: (_, y) => if y == 0 { rgb("#f2f2f2") } else { none },
+  align: (left, right),
+  
+  [*Description (mentioning institution)*], [*Costs in CHF*],
+  [[DESCRIPTION] ([INSTITUTION])], [[AMOUNT]],
+  [[DESCRIPTION] ([INSTITUTION])], [[AMOUNT]],
+)
+```
+
+**Has this project been funded by BeLEARN before?**
+
+```{=typst}
+#styled-table(
+  columns: (6cm, 6cm),
+  align: center,
+  
+  [*Yes*], [*No*],
+  [#checkbox()], [#checkbox()],
+)
+```
+
+**Is this project (partially) financed by the BeLEARN Booster Fund?**
+
+```{=typst}
+#styled-table(
+  columns: (6cm, 6cm),
+  align: center,
+  
+  [*Yes*], [*No*],
+  [#checkbox()], [#checkbox()],
+)
+```
+
+**Is this project also (partially) financed by another funding institution?**
+
+```{=typst}
+#styled-table(
+  columns: (6cm, 6cm),
+  align: center,
+  
+  [*Yes*], [*No*],
+  [#checkbox()], [#checkbox()],
+)
+```
+
+If so, from which funding institution and for what amount?
+
+```{=typst}
+#styled-table(
+  columns: (7cm, 4cm),
+  
+  [*Funding institution:*], [*Amount in CHF:*],
+  [[INSTITUTION]], [[AMOUNT]],
+)
+```
+
+### Total Project Costs
+**Total Project Costs (including non-BeLEARN requested costs)**: [TOTAL AMOUNT] CHF
+
+
+Please fill in one form per project and send it until **[DEADLINE]** at the latest in electronic form to the following address: <info@belearn.swiss>
+
+::: {.content-visible when-format="typst"}
+```{=typst}
+#pagebreak()
+```
+:::

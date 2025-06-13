@@ -1,0 +1,12 @@
+project:
+  type: default
+  
+preview:
+  port: 4200
+  browser: false
+  
+format:
+  html:
+    toc: true
+  typst:
+    toc: false
